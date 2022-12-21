@@ -1,3 +1,18 @@
+>>>>>>>>> Shortcuts and plugins used in VS code <<<<<<<<<<<<<<
+Opening Visual Studio through terminal : code .
+Creating New text file : Ctrl+N
+Save : Ctrl+S
+
+>>>>> Status of files <<<<<<<
+Untracked files : U
+Modified files : M
+
+>>>>>Plugins used<<<<<<<
+1. Markdown
+
+
+
+
 >>>>> Shortcuts used in GIT <<<<<<<<
 
 1) Installing GIT : sudo apt-get install git
