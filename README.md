@@ -44,5 +44,34 @@ MongoDB is a documet oriented NoSQL database which is used to store high volume 
 
 MongoDB is used for JSON documents which are created in your React.js front end can be sent to the Express.js server, where they can be processed and (assuming they’re valid) stored directly in MongoDB for later retrieval.
 
+### Brief introduction conecpts Learnt in sample.txt
 
+#### CODE Vs IDE
+1) __Code__ : Code Editor is where we write instructions for the computer to execute.
+2) __IDE__ : IDE is Integrated Development System, where it combines couple of more things to develop a program, It also inculdes code editor with in it.
+
+#### Git Introduction
+GIT stands for global information tracker which is Version control sysytem used for managing projects and used for used for source code management in software development.
+
+#### Shortcuts used in GIT
+
+1) Installing GIT : sudo apt-get install git
+2) Configuring GIT Username  : git config --global user.name
+3) Configuring GIT Email  : git config --global user.email
+4) Cloning GIT repository : git clone [url]
+5) GIT show all branches ; git branch 
+6) GIT create a branch : git branch <branch_name>
+7) Switch to another branch : git checkout <branch_name>
+8) switch and create new branch : git checkout -b <branch_name>
+9) Delete branch : git checkout -d <branch_name>
+10) Staging a modified or adding a new life : git add <file-name> 
+11) Staging all files from current directory : git add --all
+12) Commit a Staged file with message : git commit -m "Your message"
+13) Transmit a local branch commits to Remote Repository branch : git Push
+14) Fetch branches from remote Repository branch : git Fetch 
+15) Unstage changes from current directory : git reset
+
+
+#### Plugins used in VS code
+1. Markdown
 
