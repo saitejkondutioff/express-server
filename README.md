@@ -1,1 +1,78 @@
-# express-server
+# Project Overview
+
+### Understanding of Client Server Architecture
+
+Client Server Architecture is a computing model in which the Server hosts, delivers, and manages most of the resources and services requested by the client.   
+It is also known as the networking computing model or client Server network as all requests and services are delivered over a network.   
+The Client Server Architecture or model has other systems connected over a network where resources are shared among the different computers.   
+   
+Client : They are the ones who sent Requests. 
+
+Server : Server is the one who provides requested services.   
+
+__Types of Client Server__:   
+1) 1-tier architecture   
+2) 2-tier architecture
+3) 3-tier architecture
+4) N-tier architecture
+
+
+### Understanding of MERN Stack
+
+MERN stands for MongoDB, Express, React, Node. 
+The MERN architecture allows you to easily construct a three-tier architecture (front end, back end, database) entirely using JavaScript and JSON.
+
+__MongoDB__ — document database
+__Express(.js)__ — Node.js web framework
+__React(.js)__ — a client-side JavaScript framework
+__Node(.js)__ — the premier JavaScript web server
+
+#### React.js Front end :
+The top tier of the MERN stack is React.js, Its a JavaScript framework for creating dynamic client-side applications in HTML.
+React lets you build up complex interfaces through simple components, connect them to data on your back-end Server, and render them as HTML.
+
+React’s helps us handling stateful, data-driven interfaces, support for forms, error handling, events, lists, and more.
+
+#### Express.js and Node.js Server Tier :
+The next level down is the Express.js server-side framework, running inside a Node.js server. 
+Express.js is considered as a “fast, unopinionated, minimalist web framework for Node.js,” . 
+Express.js contains models for URL routing (matching an incoming URL with a server function), and handling HTTP requests and responses.
+
+By making XML HTTP Requests (XHRs) or GETs or POSTs from your React.js front end, you can connect to Express.js functions that power your application. Those functions, in turn, use MongoDB’s Node.js drivers, either via callbacks or using promises, to access and update data in your MongoDB.
+
+#### MongoDB Database Tier :
+MongoDB is a documet oriented NoSQL Database which is used to store high volume data, It does have tables and columns like traditional databases. It uses JSON like documents with additional schema to store the data.The documents are stored in the key value pair format.
+
+MongoDB is used for JSON documents which are created in your React.js front end can be sent to the Express.js Server, where they can be processed and (assuming they’re valid) stored directly in MongoDB for later retrieval.
+
+### Brief Introduction concepts learnt in Sample.txt
+
+#### CODE Vs IDE
+1) __Code__ : Code Editor is where we write instructions for the computer to execute.
+2) __IDE__ : IDE is Integrated Development System, where it combines couple of more things to develop a program, It also inculdes code editor with in it.
+
+#### GIT Introduction
+GIT stands for global information tracker which is Version control system used for managing projects and used for used for source code management in software development.
+
+#### Shortcuts used in GIT
+
+1) Installing GIT : sudo apt-get install git
+2) Configuring GIT Username  : git config --global user.name
+3) Configuring GIT Email  : git config --global user.email
+4) Cloning GIT repository : git clone [url]
+5) GIT show all branches ; git branch 
+6) GIT create a branch : git branch <branch_name>
+7) Switch to another branch : git checkout <branch_name>
+8) switch and create new branch : git checkout -b <branch_name>
+9) Delete branch : git checkout -d <branch_name>
+10) Staging a modified or adding a new life : git add <file-name> 
+11) Staging all files from current directory : git add --all
+12) Commit a Staged file with message : git commit -m "Your message"
+13) Transmit a local branch commits to Remote Repository branch : git Push
+14) Fetch branches from remote Repository branch : git Fetch 
+15) Unstage changes from current directory : git reset
+
+
+#### Plugins used in VS code
+1. Markdown
+
