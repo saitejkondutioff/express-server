@@ -1,12 +1,11 @@
 {
   "name": "diagonalpatterns",
   "version": "1.0.0",
-  "description": "npm project creation for diagonal",
-  "main": "(Equilateral.js)",
+  "description": "npm project creation for Diamond pattern",
+  "main": "(Diamondpattern.js)",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node Diamondpattern.js"
-
   },
   "author": "",
   "license": "ISC"
