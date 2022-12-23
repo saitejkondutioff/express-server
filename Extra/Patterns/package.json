@@ -1,12 +1,12 @@
 {
-  "name": "diagonalpatterns",
+  "name": "patterns",
   "version": "1.0.0",
-  "description": "npm project creation for Diamond pattern",
-  "main": "(Diamondpattern.js)",
+  "description": "npm project creation for Diamond and Equivalent pattern",
+  "main": "(app.js)",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node Diamondpattern.js"
+    "start": "node app.js"
   },
-  "author": "",
+  "author": "Saitej Konduti",
   "license": "ISC"
 }
