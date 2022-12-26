@@ -2,7 +2,7 @@
 // Creating object
 
 let permissions={
-    "getUsers" : {
+    "getUsers" : { 
         all: ['head-trainer'],
         read : ['trainee', 'trainer'],
         write : ['trainer'],

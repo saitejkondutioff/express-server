@@ -7,7 +7,7 @@ const users = {
 }
 
 // function for validatin egmail
-function validateEmail(emailParams){   
+function validateEmail(emailParams){    
       
     let pattern = /^\w+([\.-]?\w+)*@+([successive]+)?(\.[tech]{4})+$/
     
