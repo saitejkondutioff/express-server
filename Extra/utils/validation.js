@@ -11,7 +11,7 @@ function validateEmail(emailParams){
     let pattern = /^\w+([\.-]?\w+)*@+([successive]+)?(\.[tech]{4})+$/
     
     // check if email is matcing the pattern
-          if (emailParams.match(pattern) != null){
+          if (emailParams.match(pattern) != null){ 
 
             return true;
                      

@@ -6,7 +6,7 @@ let permissions={
         all: ['head-trainer'],
         read : ['trainee', 'trainer'],
         write : ['trainer'],
-        delete: [],
+        delete: [], 
     }
 }
 
