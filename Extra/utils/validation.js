@@ -6,45 +6,31 @@ const users = {
 }
 
 // function for validatin egmail
-function validateEmail(emailParams){   
+const validateEmail = (emailParams) => {   
       
     let pattern = /^\w+([\.-]?\w+)*@+([successive]+)?(\.[tech]{4})+$/
     
-    // check if email is matcing the pattern
-          if (emailParams.match(pattern) != null){ 
-
-            return true;
-                     
-           }
-                else if (emailParams.match(pattern) == null){
-                  return false;
-                   
-                }
+    return emailParams.match(pattern) != null ? true : false
+         
   }
 
 // validating list of emails
 
-function validateUsers(userParams){
+const validateUsers = (userParams) => {
     let valid = 0;
     let invalid = 0;
-    for (let i =0;i<Object.values(userParams).length; i++){
-        let result = validateEmail(Object.values(userParams)[i])
-        // check if email is valid
-        if (result== true){
-            // incrementing the count for valid users.
-            valid++;
-        }
-        else if (result== false){
-            // incrementing the count for invalid users.
-            invalid++;
-        }
-    
+
+    for (const [key, value] of Object.entries(userParams)) {
+        const result = validateEmail(value)
+        result === true ? valid ++ : invalid++;
+
     }
     //Printing the count for valid users
     console.log("The number of vaild users: "+valid)
     //Printing the count for invalid users
     console.log("The number of invaild users: "+invalid)
    
+
 }
 
 // calling the function and passing list of Emails
