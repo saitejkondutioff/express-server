@@ -15,6 +15,6 @@
         }
         }
 
-module.exports = Equilateral
+module.exports = Equilateral 
     
     

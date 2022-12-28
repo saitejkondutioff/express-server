@@ -16,5 +16,7 @@ const permissions={
     }
 
 // Function call and passing parameters for module type, role, permission
-console.log(hasPermissions(permissions.getUsers, "trainer", "all"))
 
+module.exports = {
+    permissions,hasPermissions
+}

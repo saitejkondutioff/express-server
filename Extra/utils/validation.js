@@ -1,27 +1,20 @@
 //Creating object
-const users = {
-    traineeEmail: 'trainee1@successive.tech',
-    reviewerEmail: 'reviewer1@successive.tech',
-    outsideremail: 'saitejkonduti@gmail.com'
-}
+
+const validate_email = require('/home/saitejkonduti/node_workspace/express-server/Extra/utils/helpers.js')
+
+
 
 // function for validatin egmail
-const validateEmail = (emailParams) => {   
-      
-    let pattern = /^\w+([\.-]?\w+)*@+([successive]+)?(\.[tech]{4})+$/
-    
-    return emailParams.match(pattern) != null ? true : false
-         
-  }
+
 
 // validating list of emails
 
-const validateUsers = (userParams) => {
+let validateUsers = (userParams) => {
     let valid = 0;
     let invalid = 0;
 
     for (const [key, value] of Object.entries(userParams)) {
-        const result = validateEmail(value)
+        const result = validate_email.validateEmail(value)
         result === true ? valid ++ : invalid++;
 
     }
@@ -34,4 +27,5 @@ const validateUsers = (userParams) => {
 }
 
 // calling the function and passing list of Emails
-validateUsers(users)
+
+module.exports = { validateUsers}
