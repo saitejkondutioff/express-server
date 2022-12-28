@@ -1,6 +1,6 @@
 
 //Creating function
-    function Equilateral(n){
+    const Equilateral = (n) => {
         //Row creation 
         for (let i=1;i<=n;i++){
         //Printing white spaces for the triangle
@@ -15,6 +15,7 @@
         }
         }
 
+//Exporting Equilateral function
 module.exports = Equilateral 
     
     

@@ -1,22 +1,13 @@
 
 // Creating object
 
-const permissions={
-    "getUsers" : {
-        all: ['head-trainer'],
-        read : ['trainee', 'trainer'],
-        write : ['trainer'],
-        delete: [], 
-    }
+// Function call and passing parameters for module type, role, permission
+const hasPermissions = (moduleName, Role , permissiontype) => {
+    return (moduleName[permissiontype] && moduleName[permissiontype].includes(Role)) ? true : false
+
 }
 
-    const hasPermissions = (moduleName, Role , permissiontype) => {
-        return (moduleName[permissiontype] && moduleName[permissiontype].includes(Role)) ? true : false
-    
-    }
-
-// Function call and passing parameters for module type, role, permission
-
+// Exporting hasPermissions function
 module.exports = {
-    permissions,hasPermissions
+    hasPermissions
 }

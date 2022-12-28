@@ -1,6 +1,6 @@
 //Creating object
 
-const validate_email = require('/home/saitejkonduti/node_workspace/express-server/Extra/utils/helpers.js')
+const validate_email = require('./helpers.js')
 
 
 
@@ -9,7 +9,7 @@ const validate_email = require('/home/saitejkonduti/node_workspace/express-serve
 
 // validating list of emails
 
-let validateUsers = (userParams) => {
+const validateUsers = (userParams) => {
     let valid = 0;
     let invalid = 0;
 
@@ -26,6 +26,5 @@ let validateUsers = (userParams) => {
 
 }
 
-// calling the function and passing list of Emails
-
+// Exporting validateUsers function
 module.exports = { validateUsers}

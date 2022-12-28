@@ -1,6 +1,6 @@
-const final = require('/home/saitejkonduti/node_workspace/express-server/Extra/Patterns/index.js');
-const final_valid = require('/home/saitejkonduti/node_workspace/express-server/Extra/utils/index.js')
-const constant_words = require('/home/saitejkonduti/node_workspace/express-server/Extra/constants.js')
+const final = require('./patterns/index.js');
+const final_valid = require('./utils/index.js')
+const constant_words = require('./constants.js')
 
 
 const users = {
@@ -9,15 +9,15 @@ const users = {
     outsideremail: 'saitejkonduti@gmail.com'
 }
 
+//Patterns task
+//calling Diamond and Equilateral functions from .patterns/index.js
 final.Diamond(5);
 final.Equilateral(5);
 
-
-
-//final_valid.validation.validateUsers(final_valid.validation.users)
-
-//final_valid.validation.validateUsers(final_valid.validation.users)
-
+//Permissions task
+//calling hasPermissions function from /utils/index.js and permissions object from /constants.js
 console.log(final_valid.permission.hasPermissions(constant_words.permissions.getUsers,'head-trainer','all'))
 
+//validation task
+//calling validateUsers function from .utils/index.js
 final_valid.validation.validateUsers(users)
