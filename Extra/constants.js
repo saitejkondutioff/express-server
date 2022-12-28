@@ -7,7 +7,7 @@ const permissions = {"getUsers" : {
 }
 
 
-
+//Exporting permissions
 module.exports = {
     permissions
 }
