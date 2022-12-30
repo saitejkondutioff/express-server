@@ -4,10 +4,10 @@ const permissions = {"getUsers" : {
     write : ['trainer'],
     delete: [], 
 }
-}
+};
 
 
 //Exporting permissions
-module.exports = {
+export{
     permissions
 }

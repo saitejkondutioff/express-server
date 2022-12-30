@@ -1,5 +1,5 @@
 // Function creation
-    const Diamond  = (n) =>{
+  const diamond  = (n) =>{
         // for upper triangle
         for (let i=1;i<=n;i++){
         // for spaces in the upper triangle
@@ -26,7 +26,5 @@
         
         }
         }
-    
-//Exporting Diamond function
-module.exports = Diamond
-    
+   // exporting diamond
+   export default diamond;

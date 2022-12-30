@@ -1,10 +1,6 @@
-//Creating object
 
-const validate_email = require('./helpers.js')
-
-
-
-// function for validatin egmail
+//const validate_email = require('./helpers.js')
+import { validateEmail } from "./helpers.js";
 
 
 // validating list of emails
@@ -14,7 +10,7 @@ const validateUsers = (userParams) => {
     let invalid = 0;
 
     for (const [key, value] of Object.entries(userParams)) {
-        const result = validate_email.validateEmail(value)
+        const result = validateEmail(value)
         result === true ? valid ++ : invalid++;
 
     }
@@ -27,4 +23,4 @@ const validateUsers = (userParams) => {
 }
 
 // Exporting validateUsers function
-module.exports = { validateUsers}
+export { validateUsers}

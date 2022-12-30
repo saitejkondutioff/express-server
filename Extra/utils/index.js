@@ -1,7 +1,9 @@
-const permission = require('./permissions.js')
-const validation = require ('./validation.js')
+
+import { hasPermissions } from "./permissions.js"
+import { validateUsers } from "./validation.js"
+
 
 
 //Exporting permission, validation
-module.exports = {
-    permission, validation}
+export {
+    hasPermissions, validateUsers}

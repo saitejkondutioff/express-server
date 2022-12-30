@@ -1,11 +1,9 @@
 
-
-const Diamond = require('./Diamondpattern');
-const Equilateral = require('./Equilateralpattern');
-
-
+import diamond from './Diamondpattern.js'
+import equilateral from './Equilateralpattern.js';
 
 
 //Exporting Diamond and Equilateral
-module.exports = {Diamond,
-    Equilateral}
+export {diamond, equilateral}
+
+

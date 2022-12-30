@@ -7,6 +7,6 @@ const validateEmail = (emailParams) => {
   }
  
   //Exporting function validateEmail
-  module.exports = {
+  export {
     validateEmail
   }
