@@ -1,6 +1,6 @@
 
-const Equilateral  = require("./Patterns/Equilateralpattern");
-const  Diamond  = require("./Patterns/Diamondpattern");
+const Equilateral  = require("./Extra/patterns/Equilateralpattern");
+const  Diamond  = require("./Extra/patterns/Diamondpattern");
 
 console.log("--------------Print Diamond Pattern---------------------\n")
 

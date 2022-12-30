@@ -1,10 +1,10 @@
 // Function creation
-    function Diamond(n){
+  const diamond  = (n) =>{
         // for upper triangle
         for (let i=1;i<=n;i++){
         // for spaces in the upper triangle
             for (let j=0;j<n-i;j++){
-                process.stdout.write(' ')
+                process.stdout.write(' ') 
             }
         // for star in the upper triangle
             for (let k=0;k<2*i-1;k++){
@@ -26,6 +26,5 @@
         
         }
         }
-    
-module.exports = Diamond
-    
+   // exporting diamond
+   export default diamond;

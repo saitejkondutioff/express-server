@@ -1,0 +1,20 @@
+{
+  "name": "patterns",
+  "version": "1.0.0",
+  "description": "npm project creation for Diamond and Equivalent pattern",
+  "main": "Extra/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon --exec babel-node Extra/index.js"
+  },
+  "author": "Saitej Konduti",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.20.7",
+    "@babel/node": "^7.20.7",
+    "@babel/preset-env": "^7.20.2",
+    "nodemon": "^2.0.20",
+    "tsc-watch": "^6.0.0",
+    "typescript": "^4.9.4"
+  }
+}

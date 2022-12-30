@@ -1,18 +1,7 @@
-//Creating object
-const users = {
-    traineeEmail: 'trainee1@successive.tech',
-    reviewerEmail: 'reviewer1@successive.tech',
-    outsideremail: 'saitejkonduti@gmail.com'
-}
 
-// function for validatin egmail
-const validateEmail = (emailParams) => {   
-      
-    let pattern = /^\w+([\.-]?\w+)*@+([successive]+)?(\.[tech]{4})+$/
-    
-    return emailParams.match(pattern) != null ? true : false
-         
-  }
+//const validate_email = require('./helpers.js')
+import { validateEmail } from "./helpers.js";
+
 
 // validating list of emails
 
@@ -33,5 +22,5 @@ const validateUsers = (userParams) => {
 
 }
 
-// calling the function and passing list of Emails
-validateUsers(users)
+// Exporting validateUsers function
+export { validateUsers}
