@@ -1,10 +1,9 @@
-import {config} from 'dotenv';
-config() 
-import { IConfig } from './IConfig';
+import { config } from 'dotenv';
+config()
 
-const Config:IConfig = Object.freeze({
-    PORT : process.env.PORT,
-    NODE_ENV : process.env.NODE_DEV
+const Config = Object.freeze({
+    port: process.env.PORT,
+    env: process.env.NODE_ENV
 })
 
 export default Config;

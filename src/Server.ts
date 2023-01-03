@@ -1,35 +1,40 @@
 
-import express from "express";
-
-class server{
+import * as express from "express";
+class Server {
     private app: express.Express;
-   
+
     constructor(private config) {
         this.app = express();
     }
-bootstrap(){
+    bootstrap() {
         this.setroutes();
-        return this;
+        return this.app;
+    }
+   
+    public setroutes() {
+        const { env, apiPrefix } = this.config;
+        const { app } = this;
+        app.get('/health-checkup', (req, res) => {
+            res.send('I am ok');
+        })
     }
 
+    public run() {
+        
+        const { port, env } = this.config;
+        this.app.listen(port, () => {
+            try {
+                console.log("success")
+            }
+            catch (error) {
+                console.log(error)
+            }
 
-setroutes(){
-    
-        this.app.get('/health-check', function (req, res) {
-                console.log(req.body);
-                res.send('I am OK');
-            });
-        }
-
-run(){
-     this.app.listen(this.config.port,() =>{
-        try {console.log("Log success message in case of success")}
-        catch{console.log("Log success message in case of success")}
-
-     }
-     );
-}
+        });
+        return this;
+    }
 }
 
-export default server;
+
+export default Server;
 

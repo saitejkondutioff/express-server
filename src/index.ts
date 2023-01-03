@@ -1,6 +1,6 @@
-import configurations from "./config/configuration";
-import server from "./Server";
+import Config from "./config/configuration";
+import Server from "./Server";
 
-let final_run = new server(configurations);
-final_run.bootstrap
-final_run.run
+const server = new Server(Config);
+server.bootstrap()
+server.run();
