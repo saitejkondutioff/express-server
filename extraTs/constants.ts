@@ -1,12 +1,5 @@
-type Permissions = {
-    "getUsers" : {
-        all: object,
-        read : object,
-        write : object,
-        delete: object, 
+import { Permissions } from "./interfaces";
 
-};
-}
 
 const permissions: Permissions= {"getUsers" : {
     all: ['head-trainer'],
