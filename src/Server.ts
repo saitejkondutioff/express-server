@@ -7,11 +7,11 @@ class Server {
         this.app = express();
     }
     bootstrap() {
-        this.setroutes();
+        this.setupRoutes();
         return this.app;
     }
    
-    public setroutes() {
+    public setupRoutes() {
         const { env, apiPrefix } = this.config;
         const { app } = this;
         app.get('/health-checkup', (req, res) => {

@@ -1,14 +1,7 @@
-type Permissions = {
-    "getUsers" : {
-        all: object,
-        read : object,
-        write : object,
-        delete: object, 
+import { permissions } from "./interfaces";
 
-};
-}
 
-const permissions: Permissions= {"getUsers" : {
+const permissions: permissions= {"getUsers" : {
     all: ['head-trainer'],
     read : ['trainee', 'trainer'],
     write : ['trainer'],
