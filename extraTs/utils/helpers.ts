@@ -1,4 +1,4 @@
-const validateEmail = (emailParams) => {   
+const validateEmail = (emailParams:string):boolean => {   
       
     let pattern = /^\w+([\.-]?\w+)*@+([successive]+)?(\.[tech]{4})+$/
     

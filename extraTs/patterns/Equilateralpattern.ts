@@ -1,7 +1,7 @@
 
 //Creating function
 let str:string = ""
-const equilateral = (n:number):any =>{
+const equilateral = (n:number):void =>{
 //Row creation 
 for (let i=1;i<=n;i++){
 //Printing white spaces for the triangle
