@@ -3,10 +3,10 @@ import {diamond, equilateral} from "./patterns/index"
 import { hasPermissions } from "./utils/index";
 import { permissions } from "./constants";
 import { validateUsers } from "./utils/index";
-import { users } from "./interfaces";
+import { IUsers } from "./interfaces";
 
 
-const users:users = {
+const users:IUsers = {
     traineeEmail: 'trainee1@successive.tech',
     reviewerEmail: 'reviewer1@successive.tech',
     outsideremail: 'saitejkonduti@gmail.com'

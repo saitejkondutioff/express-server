@@ -1,7 +1,7 @@
-import { Permissions } from "./interfaces";
+import { permissions } from "./interfaces";
 
 
-const permissions: Permissions= {"getUsers" : {
+const permissions: permissions= {"getUsers" : {
     all: ['head-trainer'],
     read : ['trainee', 'trainer'],
     write : ['trainer'],

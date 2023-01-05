@@ -1,14 +1,13 @@
-export interface Permissions {
+export interface permissions {
     "getUsers" : {
         all: string[],
         read : string[],
         write : string[],
         delete: string[], 
-
 };
 }
 
-export interface users  {
+export interface IUsers  {
     traineeEmail: string,
     reviewerEmail: string,
     outsideremail: string,
