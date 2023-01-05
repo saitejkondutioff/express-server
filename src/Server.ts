@@ -1,5 +1,7 @@
 
 import * as express from "express";
+import * as bodyParser from 'body-parser';
+
 class Server {
     private app: express.Express;
 
@@ -10,7 +12,12 @@ class Server {
         this.setroutes();
         return this.app;
     }
-   
+    public initBodyParser() {
+        const { app } = this;
+        app.use(bodyParser.urlencoded({ extended: false}));
+        app.use(bodyParser.json());
+        }
+
     public setroutes() {
         const { env, apiPrefix } = this.config;
         const { app } = this;
