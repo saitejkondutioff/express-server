@@ -1,9 +1,9 @@
 export interface Permissions {
     "getUsers" : {
-        all: object,
-        read : object,
-        write : object,
-        delete: object, 
+        all: string[],
+        read : string[],
+        write : string[],
+        delete: string[], 
 
 };
 }
