@@ -1,6 +1,8 @@
 
-import * as express from "express";
-import * as bodyParser from 'body-parser';
+import  express from "express";
+import  bodyParser from 'body-parser';
+import notFoundRoute from "./lib/routes/notFoundRoute";
+import errorHandler from "./lib/routes/errorHandler";
 
 class Server {
     private app: express.Express;
@@ -23,6 +25,8 @@ class Server {
         app.get('/health-checkup', (req, res) => {
             res.send('I am ok');
         })
+        app.use(notFoundRoute);
+        app.use(errorHandler);
     }
 
     public run() {
